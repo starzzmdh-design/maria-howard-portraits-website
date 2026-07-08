@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Maria Howard Portraits</title>
+<meta name="description" content="Get in touch to book a portrait session with Maria Howard.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Questrial&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">Maria Howard Portraits</a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div style="position: relative;">
+  <img src="four-generations.jpg" alt="Four generations of family, portrait by Maria Howard" style="width: 100%; aspect-ratio: 2.9 / 1; object-fit: cover; object-position: 53% 15%; display: block;">
+  <div style="position: absolute; left: 0; right: 0; bottom: 0; height: 45%; background: linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0));"></div>
+  <p style="position: absolute; left: 2rem; bottom: 1.75rem; margin: 0; max-width: 640px; color: #fff; font-weight: 700; font-size: 1.15rem; line-height: 1.5;">A family portrait is more than a moment<br>&mdash;it's a bridge between those who came before and those just beginning.</p>
+</div>
+
+<section class="contact-section">
+  <h1>Let's talk</h1>
+  <p>If you're ready to book a portrait session &mdash; or simply want to explore the possibilities &mdash; I'd love to hear from you. Just fill out the form below, and I'll be in touch promptly to answer your questions, discuss your vision, and help plan a meaningful experience that celebrates your story.</p>
+
+  <form class="contact-form" action="https://formspree.io/f/xykqarky" method="POST">
+    <div>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+      <label for="email">Email address</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+    </div>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <div class="wrap">
+    &copy; <span id="year"></span> Maria Howard Portraits
+    <br>
+    <a class="social-link" href="https://www.facebook.com/MHowardPhotos" target="_blank" rel="noopener">Facebook</a>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
